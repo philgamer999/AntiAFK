@@ -36,6 +36,7 @@ namespace AntiAFK
             this.DelayLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.AFKImage = new System.Windows.Forms.PictureBox();
+            this.DelayTypeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DelayInput)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AFKImage)).BeginInit();
@@ -94,6 +95,7 @@ namespace AntiAFK
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.DelayTypeLabel);
             this.panel1.Controls.Add(this.AFKImage);
             this.panel1.Controls.Add(this.DelayLabel);
             this.panel1.Controls.Add(this.ToggleButton);
@@ -116,6 +118,15 @@ namespace AntiAFK
             this.AFKImage.TabIndex = 4;
             this.AFKImage.TabStop = false;
             this.AFKImage.Visible = false;
+            // 
+            // DelayTypeLabel
+            // 
+            this.DelayTypeLabel.AutoSize = true;
+            this.DelayTypeLabel.Location = new System.Drawing.Point(38, 69);
+            this.DelayTypeLabel.Name = "DelayTypeLabel";
+            this.DelayTypeLabel.Size = new System.Drawing.Size(61, 13);
+            this.DelayTypeLabel.TabIndex = 5;
+            this.DelayTypeLabel.Text = "Delay Type";
             // 
             // MainWindow
             // 
@@ -144,6 +155,7 @@ namespace AntiAFK
         private System.Windows.Forms.Label DelayLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox AFKImage;
+        private System.Windows.Forms.Label DelayTypeLabel;
     }
 }
 
